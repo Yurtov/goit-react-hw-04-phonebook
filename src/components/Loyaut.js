@@ -50,14 +50,14 @@ export const BtnClose = styled.button`
 `;
 
 export const Title = styled.h2`
-  font-size: 40px;
+  font-size: 45px;
   color: #4287f5;
   -webkit-text-stroke: 1.3px #000;
   margin-bottom: 10px;
 `;
 
 export const SubTitle = styled.h2`
-  font-size: 30px;
+  font-size: 35px;
   margin: 0;
 `;
 

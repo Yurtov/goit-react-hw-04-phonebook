@@ -85,13 +85,16 @@ export const App = () => {
 
       <Contacts>
         <SubTitle>Contacts</SubTitle>
-        <Filter onChange={searchByFilter} filter={filter} />
+
+        {contacts.length > 0 ? (
+          <div>
+            <Filter onChange={searchByFilter} filter={filter} />
+            <ContactList contacts={visiblesContacts} onClick={handleDelete} />
+          </div>
+        ) : (
+          <Massage>Contact list is empty</Massage>
+        )}
       </Contacts>
-      {contacts.length > 0 ? (
-        <ContactList contacts={visiblesContacts} onClick={handleDelete} />
-      ) : (
-        <Massage>Contact list is empty</Massage>
-      )}
 
       <Modal
         isOpen={isModalOpen}
