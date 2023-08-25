@@ -4,7 +4,7 @@ export const Layout = styled.main`
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   font-size: 40;
   color: #010101;
@@ -14,6 +14,7 @@ export const BtnOpen = styled.button`
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  border: 1px solid #000;
   background-color: #4287f5;
   color: #fff;
   display: flex;
@@ -24,11 +25,11 @@ export const BtnOpen = styled.button`
 `;
 
 export const Contacts = styled.div`
-  margin-top: 25px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  margin-top: 33px;
 `;
 
 export const BtnClose = styled.button`
@@ -50,13 +51,15 @@ export const BtnClose = styled.button`
 
 export const Title = styled.h2`
   font-size: 40px;
+  color: #4287f5;
+  -webkit-text-stroke: 1.3px #000;
+  margin-bottom: 10px;
 `;
 
 export const SubTitle = styled.h2`
   font-size: 30px;
-  margin-bottom: 0;
+  margin: 0;
 `;
-
 
 export const Massage = styled.p`
   font-size: 20px;

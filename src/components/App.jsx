@@ -79,13 +79,13 @@ export const App = () => {
   return (
     <Layout>
       <Title>Phonebook</Title>
+      <BtnOpen onClick={openModal}>
+        <AiOutlineUserAdd size={45} />
+      </BtnOpen>
 
-      <Filter onChange={searchByFilter} filter={filter} />
       <Contacts>
         <SubTitle>Contacts</SubTitle>
-        <BtnOpen onClick={openModal}>
-          <AiOutlineUserAdd size={45} />
-        </BtnOpen>
+        <Filter onChange={searchByFilter} filter={filter} />
       </Contacts>
       {contacts.length > 0 ? (
         <ContactList contacts={visiblesContacts} onClick={handleDelete} />
