@@ -4,7 +4,15 @@ import { AiOutlineUserAdd, AiOutlineClose } from 'react-icons/ai';
 import { ContactForm } from './ContactForm/ContactForm';
 import { ContactList } from './ContactList/ContactList';
 import { Filter } from './Filter/Filter';
-import { Layout, BtnOpen, Contacts, BtnClose, Title, SubTitle } from './Loyaut';
+import {
+  Layout,
+  BtnOpen,
+  Contacts,
+  BtnClose,
+  Title,
+  SubTitle,
+  Massage,
+} from './Loyaut';
 
 const localStorageKey = 'contacts';
 
@@ -79,7 +87,12 @@ export const App = () => {
           <AiOutlineUserAdd size={45} />
         </BtnOpen>
       </Contacts>
-      <ContactList contacts={visiblesContacts} onClick={handleDelete} />
+      {contacts.length > 0 ? (
+        <ContactList contacts={visiblesContacts} onClick={handleDelete} />
+      ) : (
+        <Massage>Contact list is empty</Massage>
+      )}
+
       <Modal
         isOpen={isModalOpen}
         onRequestClose={closeModal}

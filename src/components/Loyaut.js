@@ -26,7 +26,8 @@ export const BtnOpen = styled.button`
 export const Contacts = styled.div`
   margin-top: 25px;
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 10px;
   align-items: center;
 `;
 
@@ -53,4 +54,11 @@ export const Title = styled.h2`
 
 export const SubTitle = styled.h2`
   font-size: 30px;
+  margin-bottom: 0;
+`;
+
+
+export const Massage = styled.p`
+  font-size: 20px;
+  color: #d4082a;
 `;
