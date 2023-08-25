@@ -8,6 +8,7 @@ export const Layout = styled.main`
   align-items: center;
   font-size: 40;
   color: #010101;
+  background-color: #ebebed;
 `;
 
 export const BtnOpen = styled.button`
